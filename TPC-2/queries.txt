@@ -1,0 +1,7 @@
+1- Identificação de todos os arqueossítios de Amares:
+/ARQSITS/ARQELEM[contains(CONCEL,'Amares')]/IDENTI
+
+2- Identificação de todos os arqueossítios de termo micáceo.
+/ARQSITS/ARQELEM[//LIGA/@TERMO = 'mic�ceo']/IDENTI
+
+3- Identificação de todos os arqueossítios de Barcelos com ligação ao termo romanização. -- TODO

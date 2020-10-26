@@ -11,8 +11,9 @@
             href CDATA #REQUIRED>
 
 <!ELEMENT team (element+) >
-<!ELEMENT element (name, email) >
+<!ELEMENT element (name, number, email) >
 <!ELEMENT name (#PCDATA) >
+<!ELEMENT number (#PCDATA) >
 <!ELEMENT email (#PCDATA) >
 
 <!ELEMENT abstract (paragraph+) >

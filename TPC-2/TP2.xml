@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE projectRecord SYSTEM "PR.dtd">
+<projectRecord>
+    <title>TPC 2</title>
+    <data>
+        <title>TPC 2</title>
+        <subtitle>DTD do Project Recorder</subtitle>
+        <subtitle>Queries de Xpath sobre arq.xml</subtitle>
+        <beginDate>25/10/2020</beginDate>
+        <endDate>26/10/2020</endDate>
+        <supervisor href=""></supervisor>
+    </data>
+    <team>
+        <element>
+            <name>Marco Matias Pereira Gonçalves</name>
+            <number>a75480</number>
+            <email>marcomatiaspg@gmail.com</email>
+        </element>
+    </team>
+    <abstract>
+        <paragraph>
+            <line>O DTD <bold>respeita</bold> os <italic>parametros</italic> <underlined>pedidos</underlined>.</line>
+        </paragraph>
+        <paragraph>
+            <line></line>
+        </paragraph>
+    </abstract>
+    <deliverables>
+        <ref href="./PR.dtd">DTD</ref>
+        <ref href="./queries.txt">Queries</ref>
+    </deliverables>
+</projectRecord>
