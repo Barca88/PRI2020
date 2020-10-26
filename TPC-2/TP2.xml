@@ -22,11 +22,13 @@
             <line>O DTD <bold>respeita</bold> os <italic>parametros</italic> <underlined>pedidos</underlined>.</line>
         </paragraph>
         <paragraph>
-            <line></line>
+            <line>As queries só a ultima é que não funciona</line>
         </paragraph>
     </abstract>
     <deliverables>
         <ref href="./PR.dtd">DTD</ref>
         <ref href="./queries.txt">Queries</ref>
+        <ref href="./querie1.html">Output da 1ª</ref>
+        <ref href="./querie2.html">Output da 2ª</ref>
     </deliverables>
 </projectRecord>
