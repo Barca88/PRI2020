@@ -17,13 +17,14 @@
 <!ELEMENT email (#PCDATA) >
 
 <!ELEMENT abstract (paragraph+) >
+
 <!ELEMENT paragraph (line+) >
-<!ELEMENT line (#PCDATA|bold|italic|underlined|ref)* >
-<!ELEMENT bold (#PCDATA) >
-<!ELEMENT italic (#PCDATA) >
-<!ELEMENT underlined (#PCDATA) >
+<!ELEMENT line (#PCDATA|i|b|u|ref)* >
+<!ELEMENT i (#PCDATA|b|u|ref)* >
+<!ELEMENT b (#PCDATA|i|u|ref)* >
+<!ELEMENT u (#PCDATA|i|b|ref)* >
 
 <!ELEMENT deliverables (ref+) >
 <!ELEMENT ref (#PCDATA) >
 <!ATTLIST ref
-            href CDATA #REQUIRED>
+            url CDATA #REQUIRED >
