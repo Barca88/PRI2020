@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE projectRecord SYSTEM "../TPC-2/PR.dtd">
+<projectRecord>
+    <title>TPC 3</title>
+    <data>
+        <title>TPC 3</title>
+        <subtitle>Servidor js a ler html</subtitle>
+        <beginDate>8/11/2020</beginDate>
+        <endDate>9/11/2020</endDate>
+        <supervisor href="https://www.di.uminho.pt/~jcr">Professor JCR</supervisor>
+    </data>
+    <team>
+        <element>
+            <name>Marco Matias Pereira Gonçalves</name>
+            <number>a75480</number>
+            <email>marcomatiaspg@gmail.com</email>
+        </element>
+    </team>
+    <abstract>
+        <paragraph>
+            <line>Correndo 'node server.js' o Servidor é iniciado conseguindo assim correr o <i> webservice </i> pedido com o <ref url="http://localhost:7777/">este url</line>
+        </paragraph>
+    </abstract>
+    <deliverables>
+        <ref href="./server.js">Servidor</ref>
+        <ref href="./multi_indice.xsl">XSL usado</ref>
+        <ref href="./arq(1).xml">XML fornecido</ref>
+        <ref href="http://localhost:7777/">Webservice</ref>
+    </deliverables>
+</projectRecord>
