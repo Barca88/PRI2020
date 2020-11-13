@@ -46,11 +46,11 @@ function alunosId(res, listaUrl) {
             aluno = resp.data;
             res.write(`<h1>Aluno</h1>`);
             res.write(`<p>Nome: ${aluno.nome}</p>`);
-            res.write(`<p>Id: ${aluno.id}</p>`);
+            res.write(`<p>Número de aluno: ${aluno.id}</p>`);
             res.write(`<p>Data de Nascimento: ${aluno.dataNasc}</p>`);
-            res.write(`<p>Curso: ${aluno.curso}</p>`);
+            res.write(`<p>Curso: <a href=\"http://localhost:3001/cursos/${aluno.curso}\">${aluno.curso}</a></p>`);
             res.write(`<p>Ano do Curso: ${aluno.anoCurso}</p>`);
-            res.write(`<p>Instrumento: ${aluno.instrumento}</p>`);
+            res.write(`<p>Instrumento: <a href=\"http://localhost:3001/instrumentos/${aluno.instrumento}\">${aluno.instrumento}</a></p>`);
             res.write('<p><a href=\"http://localhost:3001/alunos\">Alunos</a></p>');
             res.write('<a href=\"http://localhost:3001/\">Indice</a>');
             res.end();
@@ -76,7 +76,7 @@ function cursosId(res, listaUrl) {
             res.write(`<p>Designação: ${curso.designacao}</p>`);
             res.write(`<p>Id: ${curso.id}</p>`);
             res.write(`<p>Duração do Curso: ${curso.duracao}</p>`);
-            res.write(`<p>Instrumento: ${curso.instrumento.nomeIns}</p>`);
+            res.write(`<p>Instrumento: <a href=\"http://localhost:3001/instrumentos/${curso.instrumento.nomeIns}\">${curso.instrumento.nomeIns}</a></p>`);
             res.write('<p><a href=\"http://localhost:3001/cursos\">Cursos</a></p>');
             res.write('<a href=\"http://localhost:3001/\">Indice</a>');
             res.end();
@@ -92,12 +92,12 @@ function cursosId(res, listaUrl) {
         });
 }
 function instrumentosId(res, listaUrl) {
-    axios.get('http://localhost:3000/instrumentos/' + listaUrl[1])
+    axios.get('http://localhost:3000/instrumentos?nomeIns=' + listaUrl[1])
         .then(resp => {
             res.writeHead(200, {
                 'Content-type': 'text/html; charset=utf-8'
             })
-            instrumento = resp.data;
+            instrumento = resp.data[0];
             res.write(`<h1>Instrumento</h1>`);
             res.write(`<p>Nome: ${instrumento.nomeIns}</p>`);
             res.write(`<p>Id: ${instrumento.id}</p>`);
@@ -184,7 +184,7 @@ var servidor = http.createServer(function (req, res) {
                             res.write('<h1>Instrumentos</h1>');
                             res.write('<ul>');
                             instrumentos.forEach(i => {
-                                res.write(`<li><a href="http://localhost:3001/instrumentos/${i.id}"> ${i.id}, ${i.nomeIns}</a></li> `);
+                                res.write(`<li><a href="http://localhost:3001/instrumentos/${i.nomeIns}"> ${i.id}, ${i.nomeIns}</a></li> `);
                             });
                             res.write('</ul>');
                             res.write('<a href=\"http://localhost:3001/\">Indice</a>');
