@@ -46,7 +46,7 @@ function alunosId(res, listaUrl) {
             aluno = resp.data;
             res.write(`<h1>Aluno</h1>`);
             res.write(`<p>Nome: ${aluno.nome}</p>`);
-            res.write(`<p>id: ${aluno.id}</p>`);
+            res.write(`<p>Id: ${aluno.id}</p>`);
             res.write(`<p>Data de Nascimento: ${aluno.dataNasc}</p>`);
             res.write(`<p>Curso: ${aluno.curso}</p>`);
             res.write(`<p>Ano do Curso: ${aluno.anoCurso}</p>`);
@@ -74,7 +74,7 @@ function cursosId(res, listaUrl) {
             curso = resp.data;
             res.write(`<h1>Curso</h1>`);
             res.write(`<p>Designação: ${curso.designacao}</p>`);
-            res.write(`<p>id: ${curso.id}</p>`);
+            res.write(`<p>Id: ${curso.id}</p>`);
             res.write(`<p>Duração do Curso: ${curso.duracao}</p>`);
             res.write(`<p>Instrumento: ${curso.instrumento.nomeIns}</p>`);
             res.write('<p><a href=\"http://localhost:3001/cursos\">Cursos</a></p>');
@@ -100,7 +100,7 @@ function instrumentosId(res, listaUrl) {
             instrumento = resp.data;
             res.write(`<h1>Instrumento</h1>`);
             res.write(`<p>Nome: ${instrumento.nomeIns}</p>`);
-            res.write(`<p>id: ${instrumento.id}</p>`);
+            res.write(`<p>Id: ${instrumento.id}</p>`);
             res.write('<p><a href=\"http://localhost:3001/instrumentos\">Instrumentos</a></p>');
             res.write('<a href=\"http://localhost:3001/\">Indice</a>');
             res.end();
