@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE projectRecord SYSTEM "../TPC-2/PR.dtd">
+<projectRecord>
+    <title>TPC 5</title>
+    <data>
+        <title>TPC 5</title>
+        <subtitle>Servidor node sobre elementos da escola de musica</subtitle>
+        <beginDate>8/11/2020</beginDate>
+        <endDate>15/11/2020</endDate>
+        <supervisor href="https://www.di.uminho.pt/~jcr">Professor JCR</supervisor>
+    </data>
+    <team>
+        <element>
+            <name>Marco Matias Pereira Gonçalves</name>
+            <number>a75480</number>
+            <email>marcomatiaspg@gmail.com</email>
+        </element>
+    </team>
+    <abstract>
+        <paragraph>
+            <line>Correndo 'node escola.js' o Servidor é iniciado conseguindo assim correr o <i> webservice </i> pedido com <ref url="http://localhost:3001/">este url<ref></line>
+            <line>Com o servidor a correr este precisa de ir buscar os dados á base de dados e para isso utiliza o json-server.</line>
+            <line>Para o correr precisamos apenas de correr 'json-server db.js' e ficamos com a <ref url="http://localhost:3001/">base de dados<ref> do db.json fornecido pelo professor e actualizado por mim.</line>
+        </paragraph>
+    </abstract>
+    <deliverables>
+        <ref href="./escola.js">Servidor</ref>
+        <ref href="./db.json">Base de dados</ref>
+    </deliverables>
+</projectRecord>
