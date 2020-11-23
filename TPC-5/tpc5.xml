@@ -18,9 +18,9 @@
     </team>
     <abstract>
         <paragraph>
-            <line>Correndo 'node escola.js' o Servidor é iniciado conseguindo assim correr o <i> webservice </i> pedido com <ref url="http://localhost:3001/">este url<ref></line>
+            <line>Correndo 'node escola.js' o Servidor é iniciado conseguindo assim correr o <i> webservice </i> pedido com <ref url="http://localhost:3001/">este url</ref></line>
             <line>Com o servidor a correr este precisa de ir buscar os dados á base de dados e para isso utiliza o json-server.</line>
-            <line>Para o correr precisamos apenas de correr 'json-server db.js' e ficamos com a <ref url="http://localhost:3001/">base de dados<ref> do db.json fornecido pelo professor e actualizado por mim.</line>
+            <line>Para o correr precisamos apenas de correr 'json-server db.js' e ficamos com a <ref url="http://localhost:3001/">base de dados</ref> do db.json fornecido pelo professor e actualizado por mim.</line>
         </paragraph>
     </abstract>
     <deliverables>
