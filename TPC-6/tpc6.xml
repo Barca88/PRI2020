@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE projectRecord SYSTEM "../TPC-2/PR.dtd">
+<projectRecord>
+    <title>TPC 6</title>
+    <data>
+        <title>TPC 6</title>
+        <subtitle>To do List em Single page</subtitle>
+        <beginDate>21/11/2020</beginDate>
+        <endDate>23/11/2020</endDate>
+        <supervisor href="https://www.di.uminho.pt/~jcr">Professor JCR</supervisor>
+    </data>
+    <team>
+        <element>
+            <name>Marco Matias Pereira Gonçalves</name>
+            <number>a75480</number>
+            <email>marcomatiaspg@gmail.com</email>
+        </element>
+    </team>
+    <abstract>
+        <paragraph>
+            <line>Correndo 'json-server db.json' e noutro termial 'node toDoList.js' já consegue gerir as suas tarefas <ref href="http://localhost:8888/">na porta 8888</ref></line>
+            <line>Quanto aos responsaveis é necessário povoar a base de dados á mão caso queria acrescentar algum.</line>
+        </paragraph>
+    </abstract>
+    <deliverables>
+        <ref href="./toDoList.js">Servidor da ToDo List</ref>
+        <ref href="./db.json">Base de dados</ref>
+    </deliverables>
+</projectRecord>
