@@ -1,0 +1,25 @@
+extends layout
+block content
+    .w3-card-4
+        header.w3-container.w3-deep-orange.w3-padding
+            h3.w3-left Aluno
+        if infoaluno != null
+            h3 #{infoaluno.Nome}
+            div(class="w3-container w3-orange")
+                p Número de aluno: #{infoaluno.Número}
+                p Página Github: #{infoaluno.Git}
+                p TPs: #{infoaluno.tpc}
+        else
+            div(class="w3-container")
+                p Erro: Aluno não encontrado...
+                p
+                a(href='/') Voltar a página inicial.
+                p
+                a(href='/alunos') Voltar a página de alunos.
+        footer(class="w3-container w3-deep-orange")
+            .w3-container
+                a(href='/') 
+                    button Início 
+                a(href='/alunos') 
+                    button Alunos
+                address Gerado por Marco Matias :: 2020-Novembro
