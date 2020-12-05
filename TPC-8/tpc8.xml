@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE projectRecord SYSTEM "../TPC-2/PR.dtd">
+<projectRecord>
+    <title>TPC 8</title>
+    <data>
+        <title>TPC 8</title>
+        <subtitle>Servidor js a fazer download e upload de vários ficheiros</subtitle>
+        <beginDate>4/12/2020</beginDate>
+        <endDate>5/12/2020</endDate>
+        <supervisor href="https://www.di.uminho.pt/~jcr">Professor JCR</supervisor>
+    </data>
+    <team>
+        <element>
+            <name>Marco Matias Pereira Gonçalves</name>
+            <number>a75480</number>
+            <email>marcomatiaspg@gmail.com</email>
+        </element>
+    </team>
+    <abstract>
+        <paragraph>
+            <line>No ficheiro <i>html-templates</i> temos o código para gerar o código html </line>
+            <line>No ficheiro <i>server.js</i> temos o código do servidor que trata os GET's e os POST's </line>
+            <line>Na pasta <i>public</i> temos o código que é corrido no lado utilizador como o <b>form.js</b> e o <b>imagens.js</b> e o CSS bem como o código jquerry<line>
+        </paragraph>
+        <paragraph>
+            <line>Para correr basta '$ npm install' seguido de um '$ npm start' caso não funcione poderá ter que instalar o package <b>nodemon</b></line>
+        </paragraph>   
+    </abstract>
+    <deliverables>
+        <ref href="./server.js">Servidor</ref>
+        <ref href="./html-templates">Funcoes que geram código html</ref>
+        <ref href="./public/form.js">Cógido a ser executado no clente</ref>
+        <ref href="./public/imagens.js">Cógido a ser executado no clente</ref>
+    </deliverables>
+</projectRecord>
